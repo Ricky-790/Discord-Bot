@@ -20,31 +20,9 @@ def find_item(item_name):
     soup = soup.prettify()
 
     text = soup[s:e]
+    print(text)
+    print('\n\n\n\n')
     words = re.findall(r'<p>([^<>]*)</p>', text)
-    # for i in words:
-    #     text = text.replace(i, "")
-    # words = re.findall(r'</([^<>]*)>', text)
-    # for i in words:
-    #     text = text.replace(i, "")
-    # words = re.findall(r'<([a-zA-Z0-9_]*)>', text)
-    # for i in words:
-    #     text = text.replace(i, "")
-    #     words = re.findall(r'</([a-zA-Z0-9_]*)>', text)
-    # for i in words:
-    #     text = text.replace(i, "")
-    # print(text)
-
-    # Appearance = (words[1]).replace("\n", "")
-    # History = (words[2]).replace("\n", "")
-    # Strengths = words[3].replace("\n", "")
-    # Negative_effects = words[4].replace("\n", "")
-
-    # print (f'''
-    # `Appearance`: {Appearance}
-    # `History`: {History}
-    # `Strengths`: {Strengths}
-    # `Negative_effects`: {Negative_effects}
-    # ''')
     print(words)
 
 find_item("Death_Knell")
