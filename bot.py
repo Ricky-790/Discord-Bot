@@ -1,9 +1,9 @@
 import discord
 import os
 import gemini_api as gp
-import scrape as sc
+import scrape2 as sc
 #Secret key
-TOKEN = os.environ.get('DISCORD_TOKEN')
+TOKEN = os.environ.get("Api_Key")
 
 
 class MyClient(discord.Client):
